@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ratings Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Ratings Manager</h1>
+    <table id="ratings-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Rating</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Players will be dynamically loaded here -->
+        </tbody>
+    </table>
+    <h2>Add New Player</h2>
+    <form id="add-player-form">
+        <input type="text" id="new-player-name" placeholder="Name" required>
+        <input type="number" id="new-player-rating" placeholder="Rating (1-5)" min="1" max="5" required>
+        <button type="submit">Add Player</button>
+    </form>
+    <script src="app.js"></script>
+</body>
+</html>
+    
